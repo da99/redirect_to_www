@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+#
+
+set -u -e
+exec 2>&1
+
+cd ../
+
+bin="bin/redirect_to_www"
+echo "=== Starting @ $(date): $bin service run"
+exec chpst "$bin" service run
