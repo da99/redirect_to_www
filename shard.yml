@@ -1,0 +1,10 @@
+name: redirect_to_www
+version: 0.0.0
+dependencies:
+  da:
+    github: da99/da
+  da_server:
+    github: da99/da_server
+development_dependencies:
+  da_spec:
+    github: da99/da_spec.cr
