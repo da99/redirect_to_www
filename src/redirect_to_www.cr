@@ -13,7 +13,12 @@ module Redirect_To_WWW
   end
 
   def service_run
-    DA_Server.new("0.0.0.0", port, [Redirect_To_WWW::Handler.new]).listen
+    DA_Server.new(
+      host: "0.0.0.0",
+      port: port,
+      user: "www-redirector",
+      handlers: [Redirect_To_WWW::Handler.new]
+    ).listen
   end # === def service_run
 
   # =============================================================================

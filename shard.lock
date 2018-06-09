@@ -10,7 +10,7 @@ shards:
 
   da_server:
     github: da99/da_server
-    version: 0.1.6
+    version: 0.1.7
 
   da_spec:
     github: da99/da_spec.cr
