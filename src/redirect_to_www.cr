@@ -41,7 +41,7 @@ module Redirect_To_WWW
       if old_host == new_host
         raise Exception.new("Received a www. domain: #{path}")
       end
-      new_uri = File.join(new_host, path)
+      new_uri = File.join("http://", new_host, path)
 
       ctx.response.headers.add "Location", new_uri
       ctx.response.status_code = 301
