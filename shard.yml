@@ -1,6 +1,6 @@
 ---
 name: redirect_to_www
-version: 0.0.1
+version: 0.0.2
 dependencies:
   da:
     github: da99/da
